@@ -1,5 +1,5 @@
-import './App.css';
-import { Plus } from 'phosphor-react';
+import '../src/styles/style.css';
+import { CheckCircle, Plus, Trash } from 'phosphor-react';
 
 export function App() {
   function addTask() {
@@ -26,6 +26,20 @@ export function App() {
             <div>
               <p>Tasks completed</p>
               <span>0</span>
+            </div>
+          </div>
+          <div className="task-empty">
+            <img src="" alt="" />
+            <div>
+              <p>You have no tasks registered</p>
+              <p>Create tasks</p>
+            </div>
+          </div>
+          <div className="list-task">
+            <div className="task">
+              <CheckCircle size={32} />
+              <p></p>
+              <Trash size={32} />
             </div>
           </div>
         </main>
