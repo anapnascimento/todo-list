@@ -4,3 +4,71 @@
   border: 0;
   box-sizing: border-box;
 }
+body {
+  background: #222222;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+input,
+button {
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.wrapper {
+  max-width: 46rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
+}
+.task-form {
+  display: flex;
+  gap: 1rem;
+}
+.task-form input {
+  width: 37rem;
+  height: 3rem;
+  color: #ffffff;
+  background: #363636;
+  border: 2px solid transparent;
+}
+.task-form input:hover {
+  border: 2px solid #4e6b4e;
+}
+.task-form button {
+  width: 6rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  background: #4e6ede;
+  color: #ffffff;
+}
+.task-form button:focus {
+  border: 2px solid #253f9a;
+}
+.task-form button:disabled {
+  background: #1a1a1a;
+  color: #ffffff;
+  border: 2px solid transparent;
+}
+.task-form button:hover {
+  box-shadow: 0 0 0 2px transparent;
+  background: #253f9a;
+}
+.task-form button svg {
+  margin-left: 0.5rem;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+}
